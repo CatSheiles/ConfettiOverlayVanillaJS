@@ -24,12 +24,12 @@ function draw() {                                           // draw function - w
 
                                                             // first section here is the first piece of confetti - doesn't need to stay but keeping to show how you get from 1piece to 200.
     ctx.clearRect(0, 0, canvas.width, canvas.height);       // clears whole canvas every time before redraw so that confettis become a single piece instead of 1 long smear:)
-    confetti.y+= 0.8;                                       // moving 1 confetti down 1 place
+    confetti.y+= 1.8;                                       // moving 1 confetti down 1 place
     ctx.fillStyle = confetti.color;                         // now recall color
     ctx.fillRect(confetti.x, confetti.y, confetti.width, confetti.height);   // and recall a confetti piece
 
     confetties.forEach(piece => {
-        piece.y+= 0.8;                                      // drawing all 200 pieces of confetti and moving them down-piece.y
+        piece.y+= 1.8;                                      // drawing all 200 pieces of confetti and moving them down-piece.y
                                                             // +=1.8 is speed of confetti - can easily increase/decrease
         ctx.fillStyle = piece.color;
         ctx.fillRect(piece.x, piece.y, piece.width, piece.height);

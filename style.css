@@ -1,0 +1,59 @@
+*   {
+    box-sizing: border-box;
+    }
+
+/* background gradient */
+body {
+    border: 10px;
+    font-family: 'Pattaya', sans-serif;
+    background-color: #f2dd6e;
+    background-image: linear-gradient(90deg,#ef959d 0%, #cff27e 47%, #f2dd6e 100%);
+}
+
+.confetti {
+    position: absolute;
+    border: none;
+    pointer-events: none; /* make startbtn clickable thru canvas */
+}
+
+h1 {
+    font-size: 8rem;
+    color: #F400A1;
+    text-shadow: 3px 2px #5b5b5b; 
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* button style & hover */
+.startbtn{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.button {
+    background-color: #ffb600;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hover {
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: white;
+    color: #ef959d;
+}
+ 
